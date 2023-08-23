@@ -9,6 +9,9 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.listener.api.ChannelAwareMessageListener;
 import org.springframework.stereotype.Component;
 
+/**
+ * 定义消费者
+ */
 @Component
 public class RabbitMQConsumer implements ChannelAwareMessageListener {
     // 监听指定的队列
